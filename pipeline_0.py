@@ -7,9 +7,9 @@ Created on Tue Jan 30 13:25:23 2018
 """
 
 
-###########
-#Objective#
-###########
+######
+#Goal#
+######
 
 ########################################################################
 #prepare a pipeline to call all commands and script for compute AMS and#
