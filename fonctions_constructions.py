@@ -1831,7 +1831,7 @@ def construction_peptide_v2(nt,lg,sequence,consequence,pos_sequence,chg_codon,se
     elif even_choix=="chgt_simple_gain_stop":
         
         sequence,pos_SNP_seq=decoupage_v2(pos_sequence,sequence,len(sequence),(lg-1)*3,info)
-    #
+
     elif even_choix=="insert":
         
         sequence,pos_SNP_seq=decoupage_insert_v2(pos_sequence,sequence,len(sequence),(lg-1)*3,info,ev,nt)
