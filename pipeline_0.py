@@ -91,8 +91,7 @@ ARGS = PARSER.parse_args()
 LISTE_LONGUEURE = list(map(int, ARGS.l.split(",")))
 
 
-#preparation of path variables
-#list àf all variables paths
+#list of all variables paths
 LIST_ALL_PATH = ["PATH_INPUT_D", "PATH_INPUT_R", "PATH_OUTPUT", "PATH_PROJET", "PATH_E", "PATH_REFSEQ","PATH_EXAC","PATH_GTEX","PATH_COHORTE","PATH_BED"]
 
 PATH_INPUT_D, PATH_INPUT_R, PATH_OUTPUT, PATH_PROJET, PATH_E, PATH_REFSEQ, PATH_EXAC, PATH_GTEX, PATH_COHORTE, PATH_BED = open_init_file(ARGS.i, LIST_ALL_PATH)
@@ -186,7 +185,7 @@ os.system("mkdir "+PATH_COHORTE+"/output_table_premhc/"+MERGED_NAME)
 #
 #else:
 #
-#    print("fichier introuvable ou deja decompresser")
+#    print("file no found or already decompressed")
 #
 #if os.path.isfile(PATH_INPUT_R+ARGS.r):
 #
@@ -194,7 +193,7 @@ os.system("mkdir "+PATH_COHORTE+"/output_table_premhc/"+MERGED_NAME)
 #
 #else:
 #
-#    print("fichier introuvable ou deja decompresser")
+#    print("file no found or already decompressed")
 
 
 #################################
@@ -277,7 +276,7 @@ os.system("mkdir "+PATH_COHORTE+"/output_table_premhc/"+MERGED_NAME)
 ####################################
 
 
-#classique
+#classic
 #os.system("/data2/clerc/vep_dir/ensembl-vep/vep -i "+PATH_OUTPUT+MERGED_NAME+"/temp/out_merged.g.vcf.gz --format vcf -o "+PATH_OUTPUT+MERGED_NAME+"/temp/out_annoted.g.vcf.gz --keep_csq --offline --force_overwrite --compress_output bgzip --assembly GRCh37 --vcf CSQ --fields Uploaded_variation,Gene,Feature,Consequence,cDNA_position,CDS_position,Protein_position,Amino_acids,Codons,STRAND")
 
 #print("/data2/clerc/vep_dir/ensembl-vep/vep -i "+PATH_OUTPUT+MERGED_NAME+"/temp/out_merged.g.vcf.gz --format vcf -o "+PATH_OUTPUT+MERGED_NAME+"/temp/out_annoted.g.vcf.gz --keep_csq --offline --force_overwrite --compress_output bgzip --assembly GRCh37 --vcf CSQ --fields Uploaded_variation,Gene,Feature,Consequence,cDNA_position,CDS_position,Protein_position,Amino_acids,Codons,STRAND")
