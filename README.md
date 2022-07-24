@@ -8,7 +8,7 @@ represented by a Variant Calling Format (VCF) file, aligned with reference GRCh3
 
 ## Step 2 : filter_and_annotations_2.py
 
-<em>This script annote all mismatch detected ( refseq, transmembrane protein )</em>
+<em>This script annote all mismatch detected ( refseq, transmembrane protein ).</em>
 
 ## Step 3 : contruct_peptides_3.py
 
